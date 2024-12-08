@@ -46,6 +46,12 @@ const Contact = () => {
       setStatus("Failed to send the message. Please try again.");
     } finally {
       setLoading(false);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
     }
   };
 
