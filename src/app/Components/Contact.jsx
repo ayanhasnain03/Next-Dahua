@@ -30,17 +30,11 @@ const Contact = () => {
       });
       const templateParams = { ...formData };
       const res = await emailjs.send(
-<<<<<<< HEAD
+
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-=======
-        "service_8izrkjw",
-        "template_eyrx36i",
-        templateParams,
-        "Y6Jv1znQYHp7ubu6W"
->>>>>>> cf845455e425bebe8e3e720ffa5ee6fe73845558
       );
 
       if (res.status === 200) {
